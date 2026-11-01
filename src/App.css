@@ -1,0 +1,174 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  background: #f3f4f8;
+}
+
+.todo-card {
+  width: 100%;
+  max-width: 550px;
+  padding: 35px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.todo-card h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #222;
+  margin: 0 0 30px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  flex: 1;
+  min-width: 0;
+  padding: 13px 15px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  outline: none;
+  font-size: 15px;
+}
+
+.input-group input:focus {
+  border-color: #635bff;
+  box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.1);
+}
+
+button {
+  border: none;
+  border-radius: 9px;
+  padding: 12px 18px;
+  background: #635bff;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.filters button {
+  background: #f0f0f5;
+  color: #555;
+}
+
+.filters button.selected {
+  background: #635bff;
+  color: white;
+}
+
+.filters button:hover {
+  background: #635bff;
+  color: white;
+}
+
+.todo-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-card li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #f8f8fb;
+  border-radius: 10px;
+}
+
+.todo-card li label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.todo-card li input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  accent-color: #635bff;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.todo-card li.completed {
+  background: #f0f0f0;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.todo-card li button {
+  background: #ffe8e8;
+  color: #e05252;
+  padding: 8px 12px;
+  flex-shrink: 0;
+}
+
+.todo-card li button:hover {
+  background: #ffd4d4;
+}
+
+.todo-card li.empty {
+  justify-content: center;
+  color: #999;
+  background: #f8f8fb;
+  padding: 25px;
+}
+
+.todo-card p {
+  text-align: center;
+  color: #888;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .todo-card {
+    padding: 22px;
+  }
+
+  .todo-card h1 {
+    font-size: 25px;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group button {
+    width: 100%;
+  }
+
+  .filters {
+    gap: 6px;
+  }
+
+  .filters button {
+    padding: 10px;
+  }
+}
