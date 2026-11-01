@@ -3,16 +3,16 @@ ZalogHub Todo List
 Тестовое задание на позицию Junior Frontend Developer.
 
 О проекте
-
 Простое приложение для управления списком задач.
 
-Технологии
+Используемые технологии
 React
 TypeScript
 Vite
 CSS
 LocalStorage
-Функциональность
+
+Возможности
 Добавление задач
 Выполнение и отмена выполнения задач
 Удаление задач
@@ -20,38 +20,28 @@ LocalStorage
 Сохранение задач в LocalStorage
 Запрет добавления пустых задач
 Добавление задач клавишей Enter
-Адаптивный дизайн
+Адаптивный интерфейс
+
 Установка и запуск
-
 Клонировать репозиторий:
-
 bash
-git clone https://github.com/ТВОЙ_USERNAME/zaloghub-todo.git
+git clone https://github.com/toktogulovaliyar24-pixel/zaloghub-todo.git
 
-
-Перейти в папку:
-
+Перейти в папку проекта:
 bash
 cd zaloghub-todo
 
-
 Установить зависимости:
-
 bash
 npm install
 
-
-Запустить приложение:
-
+Запустить локально:
 bash
 npm run dev
 
-
 Собрать проект:
-
 bash
 npm run build
 
 Время выполнения
-
-Фактическое время выполнения: [укажи своё время].
+50 минут
